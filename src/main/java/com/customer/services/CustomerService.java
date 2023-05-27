@@ -2,10 +2,9 @@ package com.customer.services;
 
 import java.util.List;
 
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-
 import com.customer.model.Customer;
+import com.customer.model.ResponseData;
+import com.customer.model.SignUpData;
 
 public interface CustomerService {
 	
@@ -18,5 +17,11 @@ public interface CustomerService {
 	public void updateCustomer(Customer customer,int customerId);
 	
 	public void deleteCustomer(int custID);
+
+	
+
+	public SignUpData signUp(SignUpData data);
+
+	public ResponseData login(SignUpData log);
 
 }
